@@ -1,7 +1,7 @@
 <?php include_once('./scraper.php');
 
 // php web scraper example
-$webpage = new Webpage('https://gravitatedesign.com');
+$webpage = new Webpage('http://sebastianinman.com');
 print_r($webpage->scrape(['title', 'description']));
 
 ?>
@@ -12,7 +12,7 @@ print_r($webpage->scrape(['title', 'description']));
 <script>
 
   // javascript ajax web scraper example
-  $.fn.scrapeWebsite(['title', 'description'], ['https://gravitatedesign.com', 'https://www.devtools.online'], function(response) {
+  $.fn.scrapeWebsite(['title', 'description'], ['http://sebastianinman.com', 'https://www.devtools.online'], function(response) {
 
     console.log(response);
 
